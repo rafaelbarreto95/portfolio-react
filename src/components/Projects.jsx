@@ -57,7 +57,7 @@ const projects = [
   },
   {
     title: "Império Burguer",
-    image: "/projetos/imperio-burguer.jpeg",
+    image: "/projetos/imperio-burguer.png",
     description:
       "Cardápio digital com carrinho de compras, cálculo automático de pedidos e integração com WhatsApp.",
     technologies: [
