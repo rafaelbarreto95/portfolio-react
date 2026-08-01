@@ -81,7 +81,11 @@ function Certificates() {
               whileHover={{ y: -8, scale: 1.02 }}
               onClick={() => setSelectedCertificate(certificate)}
             >
-              <img src={certificate.image} alt={certificate.title} />
+              <img
+                src={certificate.image}
+                alt={certificate.title}
+                loading="lazy"
+              />
 
               <div className="certificate-info">
                 <span className="certificate-badge">

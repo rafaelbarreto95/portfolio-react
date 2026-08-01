@@ -1,25 +1,42 @@
-
+import { useState } from "react";
+import { FaBars, FaTimes } from "react-icons/fa";
 
 function Navbar() {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const closeMenu = () => setIsOpen(false);
+
   return (
     <header>
-    
       <nav>
-        <a href="#inicio">Início</a>
-        <a href="#jornada">Evoluçao profissional</a>
-        <a href="#sobre">Sobre</a>
-        <a href="#tecnologias">Tecnologias</a>
-        <a href="#projetos">Projetos</a>
-        <a href="#certificados">Certificados</a>
-        <a href="#contato">Contato</a>
-
-        <a
-          href="/Rafael Barreto CV.pdf"
-          download
-          className="btn-cv"
+        <button
+          className="nav-toggle"
+          onClick={() => setIsOpen((prev) => !prev)}
+          aria-label={isOpen ? "Fechar menu" : "Abrir menu"}
+          aria-expanded={isOpen}
         >
-          Download CV
-        </a>
+          {isOpen ? <FaTimes /> : <FaBars />}
+        </button>
+
+        <div className={`nav-links ${isOpen ? "open" : ""}`}>
+          <a href="#inicio" onClick={closeMenu}>Início</a>
+          <a href="#jornada" onClick={closeMenu}>Evolução profissional</a>
+          <a href="#sobre" onClick={closeMenu}>Sobre</a>
+          <a href="#tecnologias" onClick={closeMenu}>Tecnologias</a>
+          <a href="#projetos" onClick={closeMenu}>Projetos</a>
+          <a href="#freelancer" onClick={closeMenu}>Freelancer</a>
+          <a href="#certificados" onClick={closeMenu}>Certificados</a>
+          <a href="#contato" onClick={closeMenu}>Contato</a>
+
+          <a
+            href="/Rafael-Barreto-CV.pdf"
+            download
+            className="btn-cv"
+            onClick={closeMenu}
+          >
+            Download CV
+          </a>
+        </div>
       </nav>
     </header>
   );

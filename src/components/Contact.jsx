@@ -127,28 +127,44 @@ function Contact() {
           onSubmit={sendEmail}
           className="contact-form"
         >
+          <label htmlFor="from_name" className="sr-only">
+            Seu nome
+          </label>
           <input
+            id="from_name"
             type="text"
             name="from_name"
             placeholder="Seu nome"
             required
           />
 
+          <label htmlFor="reply_to" className="sr-only">
+            Seu e-mail
+          </label>
           <input
+            id="reply_to"
             type="email"
             name="reply_to"
             placeholder="Seu e-mail"
             required
           />
 
+          <label htmlFor="subject" className="sr-only">
+            Assunto
+          </label>
           <input
+            id="subject"
             type="text"
             name="subject"
             placeholder="Assunto"
             required
           />
 
+          <label htmlFor="message" className="sr-only">
+            Sua mensagem
+          </label>
           <textarea
+            id="message"
             name="message"
             rows="6"
             placeholder="Digite sua mensagem..."
