@@ -39,21 +39,23 @@ const projects = [
       "https://github.com/rafaelbarreto95/marioeluigiplumbing",
   },
   {
-    title: "Quick Notes",
-    image: "/projetos/quick-notes.png",
+    title: "Komartins",
+    image: "/projetos/komartins.png",
     description:
-      "Aplicação de gerenciamento de tarefas com CRUD completo, calendário interativo e sistema de prioridades.",
+      "Site institucional moderno e responsivo, feito para uma distribuidora do ramo de panificação, com foco em destacar seus produtos e serviços, além de facilitar o contato com clientes e parceiros.",
 
     technologies: [
       "HTML",
       "CSS",
-      "JavaScript"
+      "TypeScript",
+      "React"
+      
     ],
     demo:
-      "https://creatingquicknotes.netlify.app/",
+      "https://komartins.netlify.app/",
 
     github:
-      "https://github.com/rafaelbarreto95/Dashboard",
+      "https://github.com/rafaelbarreto95/komartins",
   },
   {
     title: "Império Burguer",
