@@ -58,7 +58,7 @@ function Hero() {
           animate={{ opacity: 1 }}
           transition={{ delay: 0.5 }}
         >
-          Buscando oportunidade como Front-End Jr
+          Em busca de novas oportunidades 
         </motion.span>
 
         <h1>Rafael Barreto</h1>
@@ -69,8 +69,8 @@ function Hero() {
         </h2>
 
         <p>
-          Desenvolvedor Front-End em transição de carreira,
-          especializado em React, JavaScript e criação de
+          Desenvolvedor Front-End em transição de carreira, se
+          aprimorando em React, JavaScript e criação de
           interfaces modernas, responsivas e com foco em
           experiência do usuário.
         </p>
@@ -96,7 +96,7 @@ function Hero() {
         <div className="hero-stats">
 
           <div>
-            <h3>4+</h3>
+            <h3>6+</h3>
             <span>Projetos</span>
           </div>
 

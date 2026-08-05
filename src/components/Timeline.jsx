@@ -9,7 +9,7 @@ const timeline = [
   },
 
   {
-    year: "2024 - 2025",
+    year: "2023 - 2025",
     title: "Construindo Base Profissional",
     description:
       "Atuei na área financeira, desenvolvendo competências analíticas, organização e capacidade de resolver problemas complexos sob pressão.",
@@ -26,12 +26,19 @@ const timeline = [
     year: "Maio 2026",
     title: "Desenvolvimento de Projetos Reais",
     description:
-      "Criei aplicações responsivas e interativas utilizando React, JavaScript, Git e Node.js, transformando conhecimento teórico em experiência prática.",
+      "Já criando aplicações responsivas e interativas utilizando React, JavaScript, Git e Node.js, transformando conhecimento teórico em experiência prática.",
+  },
+
+  {
+    year: "Julho 2026",
+    title: "Primeiros freelances e contribuições",
+    description:
+      "Realizei meus primeiros freelances e contribuições para projetos open-source, consolidando meu conhecimento e experiência técnica.",
   },
 
   {
     year: "Hoje",
-    title: "Em Busca da Primeira Oportunidade",
+    title: "Em Busca de uma Oportunidade",
     description:
       "Continuo expandindo minhas habilidades técnicas, construindo projetos cada vez mais completos e preparado para contribuir profissionalmente como desenvolvedor Front-End.",
   },
@@ -40,27 +47,19 @@ const timeline = [
 function Timeline() {
   return (
     <section id="jornada" className="timeline-section">
-
       <div className="section-header">
-
-        <span className="section-badge">
-          Minha Jornada
-        </span>
+        <span className="section-badge">Minha Jornada</span>
 
         <h2>Evolução Profissional</h2>
 
         <p>
-          Cada projeto, curso e desafio representa um
-          passo importante na minha trajetória como
-          desenvolvedor.
+          Cada projeto, curso e desafio representa um passo importante na minha
+          trajetória como desenvolvedor.
         </p>
-
       </div>
 
       <div className="timeline">
-
         {timeline.map((item, index) => (
-
           <motion.div
             key={index}
             className="timeline-item"
@@ -79,27 +78,18 @@ function Timeline() {
               duration: 0.6,
             }}
           >
-
             <div className="timeline-dot"></div>
 
             <div className="timeline-content">
-
-              <span className="timeline-year">
-                {item.year}
-              </span>
+              <span className="timeline-year">{item.year}</span>
 
               <h3>{item.title}</h3>
 
               <p>{item.description}</p>
-
             </div>
-
           </motion.div>
-
         ))}
-
       </div>
-
     </section>
   );
 }
