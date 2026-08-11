@@ -29,7 +29,7 @@ function Navbar() {
           <a href="#contato" onClick={closeMenu}>Contato</a>
 
           <a
-            href="/Rafael-Barreto-CV.pdf"
+            href="./public/Rafael-Barreto-CV.pdf"
             download
             className="btn-cv"
             onClick={closeMenu}
